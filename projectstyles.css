@@ -111,13 +111,15 @@ section img {
 
 .img-3,
 .img-7,
-.img-9 {
+.img-9,
+.final3 {
     margin-left: 40%;
     margin-top: 80px;
 }
 
 .img-11,
-.img-10 {
+.img-10,
+.final5 {
     margin-left: 20%;
     margin-top: 33vh;
 }
@@ -128,7 +130,8 @@ section img {
     margin-top: 300px;
 }
 
-#section-1 {
+#section-1,
+#section-4 {
     padding: 3em;
     text-align: center;
     white-space: pre-wrap; /* Allow multiple lines and preserve formatting */
@@ -147,20 +150,19 @@ section img {
 }
 
 .earth-img-1,
-.earth-img-3 {
-    width: 45%;
+.earth-img-3,
+.final1 {
     margin-top: 10vh;
 }
 
 .earth-img-2,
-.earth-img-4 {
-    width: 45%;
+.earth-img-4,
+.final2 {
     margin-top: 20vh;
     margin-left: 40%;
 }
 
 .earth-img-5 {
-    width: 45%;
     margin-left: 20%;
 }
 
@@ -178,3 +180,59 @@ section img {
     color: rgb(134, 174, 73);
     transition: all 0.3s ease;
 }
+
+.colorboard{
+    width: 45%;
+}
+.materialboard{
+    margin-left: 25%;
+    margin-top: 10vh;
+}
+.moodboard{
+    width: 45%;
+    margin-top: 20vh;
+    margin-left: 42%;
+}
+
+.btn-tags {
+    width: 80%;
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    text-align: center;
+}
+
+#btn {
+    display: inline-block;
+    border: none;
+    background-color: #282828;
+    color: pink;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: #404040;
+}
+
+#btn.pink{
+    color: pink;
+}
+
+#btn.orange{
+    color: rgb(255, 166, 0);
+}
+
+#btn.green{
+    color: yellowgreen;
+}
+
+#btn.blue{
+    color: dodgerblue;
+}
+
+/* 3000 60 1100
+750 15 210 */

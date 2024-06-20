@@ -1,12 +1,12 @@
 const dataArray = [
     { id: 1, name: "Among Us - Woodland", link:"amongus.html" },
     { id: 2, name: "Earth's Rhythm - Woodland", link: "earth.html"},
-    { id: 3, name: "Cosmic Citadel Cosmic" },
-    { id: 4, name: "Digital Realm Zone" },
-    { id: 5, name: "Galactic Haven Galactic" },
-    { id: 6, name: "Stellar Hub Stellar" },
-    { id: 7, name: "Quantum Sanctum Quantum" },
-    { id: 8, name: "Lunar Vector Luna" },
+    { id: 3, name: "Ankle Boots", link:"ankleboots.html" },
+    { id: 4, name: "Boxy Crop Jacket", link:"boxycropjacket.html" },
+    { id: 5, name: "Sneakers", link:"sneakers.html" },
+    { id: 6, name: "Open Jacket", link:"openjacket.html" },
+    { id: 7, name: "Safety Boots & Trousers", link: "safetyboot-trouser.html" },
+    { id: 8, name: "Oxford Shoes", link: "oxfordshoe.html" },
     { id: 9, name: "Cyber Nexus Cyber" },
     { id: 10, name: "Solar Villa Solar" },
     { id: 11, name: "Neon Nexus Nook" },
@@ -14,22 +14,21 @@ const dataArray = [
     { id: 13, name: "Digital Realm Zone" },
     { id: 14, name: "Galactic Haven Galactic" },
     { id: 15, name: "Stellar Hub Stellar" },
-    { id: 16, name: "Void Vector Villa II" },
-    { id: 17, name: "Neon Nexus Nook II" },
-    { id: 18, name: "Cosmic Citadel Cosmic II" },
-    { id: 19, name: "Digital Realm Zone II" },
-    { id: 20, name: "Galactic Haven Galactic II" },
-    { id: 21, name: "Stellar Hub Stellar II" },
-    { id: 22, name: "Quantum Sanctum Quantum II" },
-    { id: 23, name: "Lunar Vector Luna II" },
-    { id: 24, name: "Cyber Nexus Cyber II" },
-    { id: 25, name: "Solar Villa Solar II" },
-    { id: 26, name: "Neon Nexus Nook III" },
-    { id: 27, name: "Cosmic Citadel Cosmic III" },
-    { id: 28, name: "Digital Realm Zone III" },
-    { id: 29, name: "Galactic Haven Galactic III" },
-    { id: 30, name: "Stellar Hub Stellar III" },
-    
+    { id: 16, name: "Among Us - Woodland", link:"amongus.html" },
+    { id: 17, name: "Earth's Rhythm - Woodland", link: "earth.html"},
+    { id: 18, name: "Ankle Boots", link:"ankleboots.html" },
+    { id: 19, name: "Boxy Crop Jacket", link:"boxycropjacket.html" },
+    { id: 20, name: "Sneakers", link:"sneakers.html" },
+    { id: 21, name: "Open Jacket", link:"openjacket.html" },
+    { id: 22, name: "Safety Boots & Trousers", link: "safetyboot-trouser.html" },
+    { id: 23, name: "Oxford Shoes", link: "oxfordshoe.html" },
+    { id: 24, name: "Cyber Nexus Cyber" },
+    { id: 25, name: "Solar Villa Solar" },
+    { id: 26, name: "Neon Nexus Nook" },
+    { id: 27, name: "Cosmic Citadel Cosmic" },
+    { id: 28, name: "Digital Realm Zone" },
+    { id: 29, name: "Galactic Haven Galactic" },
+    { id: 30, name: "Stellar Hub Stellar" },
   ];
   
 
@@ -116,7 +115,7 @@ const dataArray = [
       onComplete: function () {
         setTimeout(function () {
           document.querySelector(".teaser").style.display = "none";
-          document.body.style.height = "3000vh";
+          document.body.style.height = "3200vh";
           document.querySelector(".main").style.display = "block";
           document.querySelector(".main").style.display = "block";
           run();
@@ -129,7 +128,7 @@ const dataArray = [
     const cursor = document.querySelector(".cursor");
     const gallery = document.querySelector(".gallery");
     const noOfItems = 30;
-    const radius = 1100;
+    const radius = 900;
     const centerX = window.innerWidth / 2;
     const centerY = window.innerHeight / 2;
     const angleIncrement = (2 * Math.PI) / noOfItems;
