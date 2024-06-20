@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thejeshwari SanthanaKrishnan</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="aboutstyles.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Handlee&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a id="currentDateLink" href="index.html">Theju | 19.6.'24</a>
+        <div class="about">
+          <a href="snaps.html">snaps</a>
+        </div>
+    </nav>
+
+    <section class="aboutme">
+      <div class="left">
+        <h1 class="my">hello, I'm <span class="myname">theju</span></h1>
+        <p><span>→</span> leather designer</p>
+        <p><span>→</span> by way of chennai, india</p>
+        <p class="keepingitreal"><span>→</span> keeping it real</p>
+        <div class="aboutme-links">
+            <i class='bx bx-envelope'></i>
+            <i class='bx bxl-instagram' ></i>
+        </div>
+      </div>
+      
+      <div class="right">
+        <p>Hi, this is to take you through a piece of mine and a tinge of my creative world.</p> <br>
+        <p> I firmly believe that the sole purpose of designing is to solve a problem and also make the solution look aesthetically
+            pleasing as well. So all of my designs are made considering these as the primary set of rules. Adding up to this,
+            through the interactions with the artisans and other experienced designers I have come to know that every design has
+            a story behind it and it has kind of rubbed off on me as well. </p><br>
+        <p> Also regarding the design themes and aesthetics, as I majorly work on leather and every hide of leather is unique I had
+            developed to keep the realness as well as the rawness of it intact in my designs through the colours, designs and
+            finishes.</p>
+      </div>
+  
+    </section>
+  
+  <section>
+    
+    <div class= "left">
+      <h1 class="left-title">Experience </h1>
+      <a href=""><h2 class="left-sub">View Resume ↗ </h2></a>
+    </div>
+    
+    <div class= "right">
+      <div class="experience">
+                <div class="job">
+                    <h3 class="right-title">Woodland</h3>
+                    <p class="right-sub">Product Design Intern - Menlo Park, CA</p>
+                    <p class="right-time">2024</p>
+                </div>
+                <div class="job">
+                    <h3 class="right-title">Ivella</h3>
+                    <p class="right-sub">Founding Product Designer - Los Angeles, CA</p>
+                    <p class="right-time">Now</p>
+                </div>
+                <div class="job">
+                    <h3 class="right-title">Instagram</h3>
+                    <p class="right-sub">Product Design Intern - Menlo Park, CA</p>
+                    <p class="right-time">2022</p>
+                </div>
+                <div class="job">
+                    <h3 class="right-title">Instagram</h3>
+                    <p class="right-sub">Product Design Intern - Menlo Park, CA</p>
+                    <p class="right-time">2022</p>
+                </div>
+        </div>
+        
+    </div>
+  </section>
+
+  <script>
+    // Get current date and format it
+    const currentDate = new Date();
+    const day = currentDate.getDate();
+    const month = currentDate.getMonth() + 1; // Months are zero indexed
+    const year = currentDate.getFullYear().toString().slice(-2); // Get last two digits of year
+
+    // Update the link text with current date
+    const currentDateLink = document.getElementById('currentDateLink');
+    currentDateLink.textContent = `Theju | ${day}.${month}.${year}`;
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/* Reset default margin and padding */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Set up base styles for the entire document */
+html, body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Style for images */
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Cursor styling */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 400px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Navigation and footer styling */
+nav, footer {
+  position: fixed;
+  width: 100%;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+  mix-blend-mode: difference;
+}
+
+/* Link and paragraph styles */
+a, p {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* Span within links styling */
+a span {
+  padding: 0 2em;
+}
+
+/* Styling for links container */
+.links {
+  display: flex;
+  gap: 2em;
+}
+
+/* Specific styling for navigation */
+nav {
+  top: 0;
+}
+
+/* Specific styling for footer */
+footer {
+  bottom: 0;
+}
+
+/* Gallery positioning and styling */
+.gallery {
+  position: fixed;
+  width: 200%;
+  height: 100%;
+  left: -75%;
+  overflow: hidden;
+}
+
+/* Styling for each item in the gallery */
+.item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 60px;
+  cursor: pointer;
+}
+
+/* Paragraph styling within gallery items */
+.item p {
+  width: 100%;
+  font-size: 42px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* Span styling within gallery items */
+.item p span {
+  padding: 0 20px;
+  font-size: 16px;
+}
+
+/* Teaser section styling */
+.teaser {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Header styling within teaser */
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  top: -4rem;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  font-family: "Gloock", serif !important;
+  color: #9ca5b1;
+}
+
+/* Styling for letter wrapper */
+.letter-wrap {
+  position: relative;
+}
+
+/* Styling for each letter */
+.letter {
+  position: relative;
+  top: 0;
+}
+
+/* Animation for letter reveal */
+.letter-reveal:before {
+  content: "";
+  position: absolute;
+  top: 100px;
+  left: -40px;
+  width: 150px;
+  height: 100px;
+  background-color: #000;
+  animation: fadeOut 1s ease-in-out forwards;
+  animation-delay: 2s;
+}
+
+/* Keyframes for fading out animation */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Animation for circle scaling */
+.circle {
+  animation: circleScale 3s ease-in-out infinite;
+  animation-delay: 10s;
+}
+
+/* Specific circle positioning for letters */
+.t .circle {
+  position: absolute;
+  bottom: 17px;
+  left: 8px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #9ca5b1;
+  animation-delay: 9s;
+}
+
+.j .circle {
+  position: absolute;
+  bottom: 0px;
+  left: -12px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #9ca5b1;
+  animation-delay: 9.75s;
+}
+
+.u .circle {
+  position: absolute;
+  bottom: 12px;
+  left: 46px;
+  width: 13px;
+  height: 13px;
+  border-radius: 100%;
+  background-color: #9ca5b1;
+  animation-delay: 10.5s;
+}
+
+/* Keyframes for circle scaling animation */
+@keyframes circleScale {
+  0% {
+    transform: scale(10);
+  }
+  50% {
+    transform: scale(7);
+  }
+  100% {
+    transform: scale(10);
+  }
+}
+
+/* Hide the main section by default */
+.main {
+  display: none;
+}
+
+/* Styling for the current date link */
+#currentDateLink {
+  color: rgb(252, 172, 185);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+#currentDateLink:hover {
+  color: rgb(174, 85, 100);
+  transition: all 0.3s ease;
+}
+
+/* Styling for the "Have a great day" paragraph */
+#greatday {
+  color: rgb(185, 255, 81);
+  font-size: 16px;
+}
+
+.about{
+  padding: 10px;
+  font-size: 16px;
+  display: flex;
+  gap: 2em;
+}

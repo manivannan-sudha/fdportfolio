@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body {
+    font-family:  "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4;
+    background-color: #000;
+}
+nav {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 2em;
+    color: #fff;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+a:hover{
+    color: #6f6f6f;
+    transition: all 0.3s ease;
+}
+h2{
+    font-size: 1.25em;
+}
+
+#currentDateLink {
+    color: rgb(252, 172, 185);
+    font-size: 16px;
+}
+#currentDateLink:hover {
+    color: rgb(174, 85, 100);
+    transition: all 0.3s ease;
+  }
+
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 5em 0em;
+  }
+  
+  .left,
+  .right{
+    padding: 2em;
+    width: 40%;
+    max-width: 40%;
+  }
+  
+  .right{
+    border-left: 1px solid #585858;
+    margin-right:6em;
+  }
+  
+.aboutme{
+    margin-top: 5em;
+}
+
+.aboutme h1{
+    font-weight: 300;
+    font-size: 3em;
+}
+
+.aboutme span{
+    margin-right: 10px;
+}
+
+.aboutme .right{
+    margin-top: 3em;
+}
+
+.aboutme-links{
+    display: flex;
+    color: #f4f4f4;
+    font-size: 2em;
+    gap: 1.2em;
+    cursor: pointer;
+    padding: 1em;
+}
+
+.aboutme-links :hover{
+    color:yellowgreen;
+    transition: all 0.3s ease;
+}
+.myname{
+    font-family: "Caveat";
+    color:pink;
+    font-weight: 400;
+}
+.keepingitreal{
+    color:pink;
+    margin-bottom: 1.5em;
+}
+
+.left-title{
+    font-weight: 300;
+}
+.left-sub,
+.right-sub{
+    margin: 5px 0;
+    color: #555;
+    font-weight: 600;
+    color: #6f6f6f;
+}
+
+
+.right-time{
+    color: rgb(217, 217, 217);
+    margin: 5px 0;
+    font-weight: 600;
+}
+
+
+.job, .recently-played ul {
+    margin-bottom: 20px;
+}
+
+.right-title, .recently-played li {
+    font-weight: 300;
+    font-size: 1.1em;
+    color: greenyellow;
+}
+
+.pic-grid {
+    padding: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns, flexible width */
+    gap: 1em; /* gap between grid items */
+}
+
+.grid-img {
+    height: 700px; /* fixed height for each image */
+    width: 100%; /* ensure images expand to fill their grid area */
+    object-fit: cover; /* maintain aspect ratio and cover the container */
+    border-radius: 8px;
+}

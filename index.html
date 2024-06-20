@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thejeshwari SanthanaKrishnan</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Handlee&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gloock&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="teaser">
+    <div class="header">
+      <div class="letter-wrap">
+        <div class="letter t">
+          <span>t</span>
+          <div class="circle"></div>
+        </div>
+        <div class="letter-reveal"></div>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="letter h">
+          <span>h</span>
+        </div>
+        <div class="letter-reveal"></div>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="letter e">
+          <span>e</span>
+        </div>
+        <div class="letter-reveal"></div>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="letter j">
+          <span>j</span>
+          <div class="circle"></div>
+        </div>
+        <div class="letter-reveal"></div>
+      </div>
+
+      <div class="letter-wrap">
+        <div class="letter u">
+          <span>u</span>
+          <div class="circle"></div>
+        </div>
+        <div class="letter-reveal"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="cursor"></div>
+
+    <nav>
+      <a id="currentDateLink" href="#">Theju | 19.6.'24</a>
+      <div class="about">
+        <a href="snaps.html">snaps</a>
+        <a href="me.html">me</a>
+      </div>
+    </nav>
+
+    <footer>
+      <div class="links">
+        <a href="">Behance</a>
+        <a href="">Mail</a>
+        <a href="">Instagram</a>
+      </div>
+      <p id="greatday">Have a great day</p>
+    </footer>
+
+    <div class="container">
+      <div class="gallery"></div>
+    </div>
+
+  </div>
+
+  <script>
+    // Get current date and format it
+    const currentDate = new Date();
+    const day = currentDate.getDate();
+    const month = currentDate.getMonth() + 1; // Months are zero indexed
+    const year = currentDate.getFullYear().toString().slice(-2); // Get last two digits of year
+
+    // Update the link text with current date
+    const currentDateLink = document.getElementById('currentDateLink');
+    currentDateLink.textContent = `Theju | ${day}.${month}.${year}`;
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="./script.js" type="module"></script>
+</body>
+</html>
